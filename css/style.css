@@ -1,0 +1,29 @@
+/*RESPONSIVE*/
+
+/*desktop*/
+@media (min-width : 1025px) {
+
+}
+
+/*pc portable*/
+@media (min-width : 1025px) and (max-width : 1700px) {
+
+}
+
+/*tablet*/
+@media (min-width : 768px) and (max-width : 1024px) {
+
+}
+
+/*mobile and tablet*/
+@media (max-width : 1024px) {
+
+}
+
+
+/*hone*/
+@media (max-width : 767px) {
+
+}
+
+/*RESPONSIVE*/
