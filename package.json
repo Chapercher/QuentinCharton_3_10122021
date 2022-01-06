@@ -1,0 +1,22 @@
+{
+  "name": "quentincharton_3_10122021",
+  "version": "1.0.0",
+  "description": "projet 3",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chapercher/QuentinCharton_3_10122021.git"
+  },
+  "keywords": [
+    "Quentin2410"
+  ],
+  "author": "Quentin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Chapercher/QuentinCharton_3_10122021/issues"
+  },
+  "homepage": "https://github.com/Chapercher/QuentinCharton_3_10122021#readme"
+}

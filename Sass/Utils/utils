@@ -1,0 +1,8 @@
+dans utils/, vous rangez vos variables, fonctions, mixins et les  %placeholders pour les extensions (si vous en utilisez) ;
+
+EXEMPLE / Les couleurs
+
+_variables
+_functions
+_mixins
+_extensions

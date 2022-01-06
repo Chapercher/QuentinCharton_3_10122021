@@ -1,0 +1,6 @@
+components/ est utilisé pour ranger les blocs BEM qui sont plus indépendants, comme les boutons.
+
+Alors que les layouts peuvent utiliser d’autres composants pour générer leurs contenus, les composants, eux, sont plus élémentaires. Par exemple, un formulaire doit être considéré comme un layout : la mise en page est une fonction vitale du bloc et il utilise d’autres blocs pour fonctionner,  comme des boutons. En revanche, le bouton lui-même est un composant car il n’a besoin d’aucun autre composant pour remplir sa fonction ;
+
+
+_buttons
