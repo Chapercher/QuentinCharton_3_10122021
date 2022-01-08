@@ -1,0 +1,9 @@
+.footer-commun{
+  width: 100%;
+  background-color: $color-bg-footer;
+  color: $color-footer;
+  padding: 2rem 1.5rem;
+  &--link{
+    padding: 0.5rem 0;
+  }
+}

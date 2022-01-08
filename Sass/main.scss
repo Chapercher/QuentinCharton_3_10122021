@@ -10,7 +10,14 @@
 // A chaque utilisation >> npm run sass
 
 @import "./utils/variables";
+@import "./utils/mixins";
+@import "./utils/color";
 
-@import "./base/_base";
+@import "./base/base";
 
+@import "./components/boutton";
 
+@import "./layout/header";
+@import "./layout/footer";
+
+@import "./pages/index"; //page d'accueil
