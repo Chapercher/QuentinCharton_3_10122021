@@ -7,6 +7,10 @@
 //Pages
 //Themes
 
-@import "./Utils/variables";
+// A chaque utilisation >> npm run sass
 
-@import "./Layout/form";
+@import "./utils/variables";
+
+@import "./base/_base";
+
+

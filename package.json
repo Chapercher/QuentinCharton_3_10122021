@@ -4,7 +4,8 @@
   "description": "projet 3",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/main.scss:./css/style.css"
+    "sass": "sass --watch ./sass/main.scss:./css/style.css",
+    "prefix": "postcss ./css/style.css --use autoprefixer -d ./css/prefixed/"
   },
   "repository": {
     "type": "git",
@@ -15,8 +16,10 @@
   ],
   "author": "Quentin",
   "license": "ISC",
+  "browserslist": "last 4 versions",
   "bugs": {
     "url": "https://github.com/Chapercher/QuentinCharton_3_10122021/issues"
   },
   "homepage": "https://github.com/Chapercher/QuentinCharton_3_10122021#readme"
 }
+
