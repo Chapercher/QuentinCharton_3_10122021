@@ -9,32 +9,57 @@
 		<link rel="stylesheet" href="/css/style.css">
 	</head>
 	<body>
-		<header class="head-first--homepage">
-			<img class="head-first__img" src="/src/logo/ohmyfood.png" alt="logo ohmyfood">
-			<p><i class="fas fa-map-marker-alt"></i> Paris, Belleville</p>
-			<h1 class="head-first__title">
-				Réservez le menu qui vous convient
-			</h1>
-			<p class="head-first__texte">
-				Découvrez des restaurants d'exception,<br>sélectionnés pas nos soins.
-			</p>
-			<button class="btn btn--purple">
-				<a href="#restaurant"><span class="btn__text">Explorer nos restaurants</span></a>
-			</button>
+
+<!-- Loader spinner -->
+	<div class="loader-page">
+		<div class="loader-page__element">
+			<div class="loader-page__logo">
+				<img src="/src/logo/ohmyfood.png" alt="logo ohmyfood">
+			</div>
+			<div class="loader-page loader-page__dot">
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+		</div>
+	</div>
+<!-- Loader spinner -->
+
+<!-- HEADER DU SITE (accueil) -->
+		<header class="head-first">
+<!--			<img class="head-first__img" src="/src/logo/ohmyfood.png" alt="logo ohmyfood">-->
+			<div class="location">
+				<div class="location_logo"><i class="fas fa-map-marker-alt"></i></div>
+				<div class="location_txt"><p>Paris, Belleville</p></div>
+			</div>
+			<div class="navigation">
+				<h1 class="head-first__title">
+					Réservez le menu qui vous convient
+				</h1>
+				<p class="head-first__txt">
+					Découvrez des restaurants d'exception,<br>sélectionnés pas nos soins.
+				</p>
+				<button class="btn btn--purple">
+					<a href="#restaurant"><span class="btn__text">Explorer nos restaurants</span></a>
+				</button>
+			</div>
 		</header>
+<!-- HEADER DU SITE -->
+
+<!-- BODY DU SITE (accueil) -->
 		<main class="container">
-			<section class="function">
-				<h2 class= "fonction_title">Fonctionnement</h2>
+			<section class="function"><!--  _about.scss-->
+				<h2 class= "function_title">Fonctionnement</h2>
 				<ol class="fct_card">
-					<li class="fonction_choice">
+					<li class="function_choice">
 						<i class="fas fa-mobile-alt"></i>
 						<p>Choisissez un restaurant</p>
 					</li>
-					<li class="fonction_choice">
+					<li class="function_choice">
 						<i class="fas fa-list"></i>
 						<p>Composez votre menu</p>
 					</li>
-					<li class="fonction_choice">
+					<li class="function_choice">
 						<i class="fas fa-store"></i>
 						<p class="content">Dégustez au restaurant</p>
 					</li>
@@ -84,6 +109,9 @@
 				</div>
 			</section>
 		</main>
+<!-- BODY DU SITE -->
+
+<!-- FOOTER DU SITE (accueil) -->
 		<footer class="footer-commun">
 			<div class="footer-commun__item">
 				<img src="/src/logo/ohmyfood@2x.svg" alt="logo ohmyfood">
@@ -93,5 +121,7 @@
 				<a href="#" class="footer-commun--link">Contact</a>
 			</div>
 		</footer>
+<!-- FOOTER DU SITE -->
+
 	</body>
 </html>
