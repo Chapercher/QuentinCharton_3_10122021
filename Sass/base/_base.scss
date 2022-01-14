@@ -16,9 +16,9 @@ a {
 }
 p{
   display: block;
-  font-size: map-get($font-size,p);
-  margin-block-start: map-get($margin-block,txt);
-  margin-block-end: map-get($margin-block,txt);
+  font-size: 1rem;
+  margin-block-start: 1rem;
+  margin-block-end: 1rem;
   margin-inline-start: 0;
   margin-inline-end: 0;
 }

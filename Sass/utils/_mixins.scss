@@ -1,15 +1,3 @@
-@mixin column {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-@mixin row {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
 // Align center
 @mixin center {
   display: flex;
@@ -17,10 +5,35 @@
   justify-content: center;
 }
 
-
 // home page image
 @mixin grid {
   display: grid;
   grid-template-rows: auto 250px 250px 250px;
   grid-template-columns: repeat(1, 1fr);
+}
+
+// mixin : flex-direction
+@mixin myFlex ($flex-direction: row){
+  flex-direction: $flex-direction;
+  display: flex;
+  align-items: center;
+}
+
+
+@mixin desktop-only {
+  @media screen and (min-width: $breakpoints-desktop){
+    @content;
+    //@include desktop-only{
+    //  règle de css
+    // }
+  }
+}
+
+@mixin tablet-only {
+  @media screen and (min-width: $breakpoints-tablet){
+    @content;
+    //@include tablet-only{
+    //  règle de css
+    // }
+  }
 }

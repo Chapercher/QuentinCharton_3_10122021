@@ -47,13 +47,13 @@ ul {
   height: 100%;
   width: 100%;
   background-color: #f2f2f2;
-  animation: loader-page ease 3s;
-  animation-delay: 2s;
+  animation: loader_page ease 3s;
+  animation-delay: 1s;
   animation-fill-mode: both;
 }
 .loader-page__element {
-  display: flex;
   flex-direction: column;
+  display: flex;
   align-items: center;
   justify-content: center;
   height: 100%;
@@ -80,22 +80,22 @@ ul {
   animation-delay: 2s;
   animation-fill-mode: both;
 }
-.loader-page__dot div:nth-child(1) {
+.loader-page__dot > div:nth-child(1) {
   left: 8px;
   animation: loader-page__dot1 0.6s infinite;
   background: #9356DC;
 }
-.loader-page__dot div:nth-child(2) {
+.loader-page__dot > div:nth-child(2) {
   left: 8px;
   animation: loader-page__dot2 0.6s infinite;
   background: #FF79DA;
 }
-.loader-page__dot div:nth-child(3) {
+.loader-page__dot > div:nth-child(3) {
   left: 32px;
   animation: loader-page__dot2 0.6s infinite;
   background: #99E2D0;
 }
-.loader-page__dot div:nth-child(4) {
+.loader-page__dot > div:nth-child(4) {
   left: 56px;
   animation: loader-page__dot3 0.6s infinite;
   background: #fff;
