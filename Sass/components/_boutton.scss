@@ -1,0 +1,19 @@
+.btn{
+  border-radius: 1.5rem;
+  border: none;
+  padding: 1rem 1.5rem;
+  font-size: 15px;
+  font-weight: 500;
+  box-shadow: 5px 5px 10px $shadow;
+  @include desktop-only{
+    padding: 1.5rem 5rem;
+    cursor: pointer;
+  }
+  &--purple{
+	background: $color-btn;
+    color: $white;
+    @include desktop-only{
+    cursor: pointer;
+    }
+  }
+}

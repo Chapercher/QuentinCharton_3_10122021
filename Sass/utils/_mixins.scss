@@ -19,7 +19,6 @@
   align-items: center;
 }
 
-
 @mixin desktop-only {
   @media screen and (min-width: $breakpoints-desktop){
     @content;
@@ -30,7 +29,7 @@
 }
 
 @mixin tablet-only {
-  @media screen and (min-width: $breakpoints-tablet){
+  @media screen and (min-width: $breakpoints-tablet-min) and (max-width: $breakpoints-tablet-max){
     @content;
     //@include tablet-only{
     //  règle de css

@@ -1,0 +1,44 @@
+.head-first{
+
+  &__img{
+	@include desktop-only{
+	  display: block;
+	  margin-left: auto;
+	  margin-right: auto;
+	  width: 30%;
+	  margin-bottom: 1rem;
+	}
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 60%;
+  }
+  &__title{
+	text-align: center;
+	margin-top: 2.5rem;
+  }
+  &__txt{
+	text-align: center;
+	margin: .5rem 0 1.5rem 0;
+  }
+  &__bg{
+	padding-bottom: 2rem;
+	background-color: $color-bg-head;
+  }
+}
+.location{
+  @include center;
+//  box-shadow: inset 0 0 5rem 0 rgba(233,233,233,.3);
+  margin-top: 0.5rem;
+  background-color: $grey;
+  &__logo{
+	margin-right: 0.5rem;
+	color: $light-grey;
+  }
+  &__txt{
+	font-weight: 500;
+  }
+}
+.navigation{
+  @include myFlex(column);
+}
