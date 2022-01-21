@@ -34,7 +34,7 @@ h1 {
 
 h2 {
   display: block;
-  font-size: 1rem;
+  font-size: 1.5rem;
   margin-block-start: 1rem;
   margin-block-end: 1rem;
   margin-inline-start: 0;
@@ -57,13 +57,17 @@ p {
 }
 @media screen and (min-width: 768px) {
   p {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 }
 
 main {
   margin: 0;
   padding: 0;
+}
+
+ol {
+  list-style: none;
 }
 
 .btn {
@@ -81,7 +85,7 @@ main {
     cursor: pointer;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .btn {
     border-radius: 2rem;
     padding: 1.5rem 4rem;
@@ -109,12 +113,14 @@ main {
     margin-left: auto;
     margin-right: auto;
     width: 25%;
+    margin-top: 2rem;
     margin-bottom: 1rem;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .head-first__img {
     width: 50%;
+    margin-top: 2rem;
     margin-bottom: 1rem;
   }
 }
@@ -162,9 +168,6 @@ main {
 }
 
 .function__card {
-  flex-direction: column;
-  display: flex;
-  align-items: center;
   margin: 2rem;
 }
 @media screen and (min-width: 768px) {
@@ -174,13 +177,40 @@ main {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
   }
 }
 .function__choice {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  text-align: center;
+  position: relative;
+  width: 65%;
+  margin: 0.5rem;
+  background-color: #f6f6f6;
+  padding: 1.5rem 2rem;
+  border-radius: 1.5rem;
+  box-shadow: 5px 5px 10px rgba(26, 26, 26, 0.3);
 }
+.function__choice--number {
+  position: absolute;
+  text-align: center;
+  top: 20px;
+  left: -10px;
+  padding: 4px;
+  width: 17px;
+  border-radius: 50%;
+  background-color: #9356DC;
+  color: #fff;
+}
+
+li:hover {
+  background-color: #f5edff;
+}
+li:hover > i {
+  color: #9356DC;
+}
+
 .restaurant {
   width: 100%;
   background: #f6f6f6;
@@ -192,10 +222,10 @@ main {
   .restaurant__block {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto 224px 165px;
+    grid-template-rows: auto 224px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .restaurant__block {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -212,6 +242,21 @@ main {
   object-fit: cover;
   border-radius: 1rem 1rem 0 0;
   width: 50%;
+}
+.restaurant__card {
+  position: relative;
+}
+.restaurant__novelty {
+  background-color: #99E2D0;
+  color: #269e80;
+}
+@media screen and (min-width: 768px) {
+  .restaurant__novelty {
+    position: absolute;
+    top: 1rem;
+    right: 35rem;
+    padding: 0.5rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

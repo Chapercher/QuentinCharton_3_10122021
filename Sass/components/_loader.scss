@@ -23,8 +23,10 @@
 	  justify-content: center;
 	  height: 100%;
 	}
-  	&__logo{
-	  width: 100%;
+  	&__logo>img{
+	  width: 70%;
+	}
+ 	&__logo{
 	  @include center;
 	}
 	&__dot{
