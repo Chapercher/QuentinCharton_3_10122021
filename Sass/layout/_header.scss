@@ -5,7 +5,11 @@
 	  display: block;
 	  margin-left: auto;
 	  margin-right: auto;
-	  width: 30%;
+	  width: 25%;
+	  margin-bottom: 1rem;
+	}
+	@include tablet-only{
+	  width: 50%;
 	  margin-bottom: 1rem;
 	}
 	display: block;
@@ -23,14 +27,14 @@
   }
   &__bg{
 	padding-bottom: 2rem;
-	background-color: $color-bg-head;
+	background-color: $light-grey;
   }
 }
 .location{
   @include center;
 //  box-shadow: inset 0 0 5rem 0 rgba(233,233,233,.3);
   margin-top: 0.5rem;
-  background-color: $grey;
+  background-color: $middle-grey;
   &__logo{
 	margin-right: 0.5rem;
 	color: $light-grey;

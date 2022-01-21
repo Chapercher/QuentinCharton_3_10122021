@@ -6,8 +6,13 @@
   font-weight: 500;
   box-shadow: 5px 5px 10px $shadow;
   @include desktop-only{
-    padding: 1.5rem 5rem;
+    border-radius: 2.5rem;
+    padding: 2rem 10rem;
     cursor: pointer;
+  }
+  @include tablet-only{
+    border-radius: 2rem;
+    padding: 1.5rem 4rem;
   }
   &--purple{
 	background: $color-btn;

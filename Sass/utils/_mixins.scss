@@ -1,3 +1,12 @@
+// Bloc
+@mixin bloc_restaurant{
+    width: 100%;
+    background: $light-grey;
+}
+@mixin block_footer{
+    background: $dark-grey;
+    color: $white;
+}
 // Align center
 @mixin center {
   display: flex;
@@ -5,11 +14,13 @@
   justify-content: center;
 }
 
-// home page image
+// home page image tablet
 @mixin grid {
   display: grid;
-  grid-template-rows: auto 250px 250px 250px;
   grid-template-columns: repeat(1, 1fr);
+  grid-gap: 25px;
+  column-gap: 40px;
+  margin: 4rem;
 }
 
 // mixin : flex-direction
@@ -19,6 +30,7 @@
   align-items: center;
 }
 
+// media queries
 @mixin desktop-only {
   @media screen and (min-width: $breakpoints-desktop){
     @content;
@@ -35,4 +47,10 @@
     //  règle de css
     // }
   }
+}
+
+@mixin tablet-desktop {
+  @media screen and (min-width: $breakpoints-tablet-desktop){
+  @content;
+}
 }

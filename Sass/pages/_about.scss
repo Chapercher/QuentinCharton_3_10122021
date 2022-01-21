@@ -1,4 +1,49 @@
-.function{
+// partie fonctionnement
 
+.function {
+  &__card {
+	@include tablet-desktop {
+	  width: 100%;
+	  @include myFlex();
+	  justify-content: space-around;
+	}
+	@include myFlex(column);
+	margin: 2rem;
+  }
+  &__choice{
+	@include tablet-desktop{
 
+	}
+	@include center;
+  }
 }
+
+// partie restaurant
+.restaurant {
+  @include bloc_restaurant;
+	>h2{
+	  text-align: center;
+	}
+  &__block {
+	@include desktop-only {
+	  display: grid;
+	  grid-template-columns: repeat(2, 1fr);
+	  grid-template-rows: auto 224px 165px;
+	}
+	@include tablet-only {
+	  @include grid;
+	}
+  }
+  &__item{
+	@include center;
+	height: 12rem;
+	object-fit: cover;
+	border-radius: 1rem 1rem 0 0;
+	width: 50%;
+  }
+// partie "nouveau" restaurant
+  &__novelty{
+
+  }
+}
+

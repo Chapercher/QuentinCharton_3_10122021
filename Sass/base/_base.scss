@@ -1,20 +1,40 @@
-*, *::before, *::after{
+*, *::before, *::after {
   box-sizing: inherit;
   margin: 0;
   padding: 0;
 }
-html{
+
+html {
   line-height: 1.15;
 }
-body{
+
+body {
   font-family: 'Roboto', sans-serif;
 }
+
 a {
   color: inherit;
   text-decoration: none;
   display: block;
 }
-p{
+
+h1 {
+  @include desktop-only {
+	font-size: 3rem;
+  }
+  display: block;
+  font-size: 2rem;
+  margin-block-start: 1rem;
+  margin-block-end: 1rem;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+}
+
+h2 {
+  @include tablet-desktop {
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+  }
   display: block;
   font-size: 1rem;
   margin-block-start: 1rem;
@@ -22,10 +42,21 @@ p{
   margin-inline-start: 0;
   margin-inline-end: 0;
 }
-ul{
-  list-style: none;
-}
-main{
-  margin: 0;
-  padding: 0;
-}
+
+  p {
+	@include tablet-desktop {
+	  font-size: 1.5rem;
+	}
+
+	display: block;
+	font-size: 1rem;
+	margin-block-start: 1rem;
+	margin-block-end: 1rem;
+	margin-inline-start: 0;
+	margin-inline-end: 0;
+  }
+
+  main {
+	margin: 0;
+	padding: 0;
+  }
