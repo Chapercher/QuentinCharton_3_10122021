@@ -2,7 +2,6 @@
 .function {
   &__card {
 	@include tablet-desktop {
-	  width: 100%;
 	  @include myFlex();
 	  justify-content: space-around;
 	@include myFlex(column);
@@ -30,6 +29,9 @@
 	  color: $white;
 	}
   }
+  &__title{
+	margin-left: 1.5rem;
+  }
 }
 li:hover{
   background-color: $color-icon;
@@ -47,11 +49,19 @@ li:hover{
   &__block {
 	@include desktop-only {
 	  display: grid;
+	  max-width: 1000px;
+	  margin: auto;
 	  grid-template-columns: repeat(2, 1fr);
-	  grid-template-rows: auto 224px;
+	  grid-template-rows: auto auto;
 	}
 	@include tablet-only {
 	  @include grid;
+	}
+	padding-bottom: 1px;
+	>a{
+	  margin: 20px;
+	  background-color: $white;
+	  border-radius: 15px;
 	}
   }
   &__item{
@@ -59,21 +69,51 @@ li:hover{
 	height: 12rem;
 	object-fit: cover;
 	border-radius: 1rem 1rem 0 0;
-	width: 50%;
+	width: 100%;
+	@include tablet-desktop{
+	  width: 100%;
+	}
   }
   &__card{
 	position: relative;
   }
 // partie "nouveau" restaurant
   &__novelty{
-	@include tablet-desktop{
 	position: absolute;
 	top: 1rem;
-	right: 35rem;
+	right: 1rem;
 	padding: .5rem;
-	}
 	background-color: $bg-novelty;
 	color: $txt-novelty;
   }
 }
 
+// page menu
+.menu-bg {
+  width: 100%;
+  position: center;
+}
+.menu-top{
+  padding-top: 5%;
+}
+.menu{
+  transform: translateY(-80px);
+  background-color: $white;
+  border-radius: 50px;
+  margin: auto;
+  &__title{
+	position: relative;
+	text-transform: uppercase;
+	margin-bottom: 1px;
+  }
+  &__title::after{
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	transform: translateX(-3px);
+	height: 2px;
+	width: 30px;
+	background-color: $bg-novelty;
+  }
+}
