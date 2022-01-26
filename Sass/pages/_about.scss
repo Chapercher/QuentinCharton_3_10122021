@@ -8,7 +8,6 @@
 	}
 	margin: 2rem;
   }
-
   &__choice {
 	text-align: center;
 	position: relative;
@@ -31,7 +30,6 @@
 	  color: $white;
 	}
   }
-
   &__title {
 	margin-left: 1.5rem;
   }
@@ -114,15 +112,17 @@ li:hover {
 }
 
 .menu {
+  background: $light-grey;
   transform: translateY(-80px);
   background-color: $white;
   border-radius: 50px;
   margin: auto;
+  padding: 0 1rem;
 
   &__title {
 	position: relative;
 	text-transform: uppercase;
-	margin-bottom: 1px;
+	margin-bottom: 1rem;
   }
 
   &__title::after {
@@ -136,13 +136,22 @@ li:hover {
 	background-color: $bg-novelty;
   }
   &__plat{
-	text-align: center;
+	overflow: hidden;
+	display: flex;
+	justify-content: space-around;
+	flex-direction: row;
+	text-align: start;
 	position: relative;
 	width: 65%;
 	margin: .5rem;
-	background-color: $light-grey;
-	padding: 1.5rem 2rem;
-	border-radius: 1.5rem;
+	background-color: $white;
+	//padding: .5rem 2rem;
+	border-radius: 1rem;
 	box-shadow: 5px 5px 10px $shadow;
+	animation: scrollbar .8s;
+	animation-timing-function: cubic-bezier(.5,1.6,.3,.8);
+  }
+  &--price{
+
   }
 }

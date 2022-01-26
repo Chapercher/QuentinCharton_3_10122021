@@ -102,6 +102,54 @@ ol {
   }
 }
 
+@keyframes scrollbar {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.scroll1 {
+  animation-delay: 0s;
+}
+
+.scroll2 {
+  animation-delay: 0.1s;
+}
+
+.scroll3 {
+  animation-delay: 0.2s;
+}
+
+.scroll4 {
+  animation-delay: 0.3s;
+}
+
+.scroll5 {
+  animation-delay: 0.4s;
+}
+
+.scroll6 {
+  animation-delay: 0.5s;
+}
+
+.scroll7 {
+  animation-delay: 0.6s;
+}
+
+.scroll8 {
+  animation-delay: 0.7s;
+}
+
+.scroll9 {
+  animation-delay: 0.8s;
+}
+
+.scroll10 {
+  animation-delay: 0.9s;
+}
+
 @keyframes loader_page {
   0% {
     opacity: 1;
@@ -382,15 +430,17 @@ li:hover > i {
 }
 
 .menu {
+  background: #f6f6f6;
   transform: translateY(-80px);
   background-color: #fff;
   border-radius: 50px;
   margin: auto;
+  padding: 0 1rem;
 }
 .menu__title {
   position: relative;
   text-transform: uppercase;
-  margin-bottom: 1px;
+  margin-bottom: 1rem;
 }
 .menu__title::after {
   content: "";
@@ -403,14 +453,19 @@ li:hover > i {
   background-color: #99E2D0;
 }
 .menu__plat {
-  text-align: center;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  text-align: start;
   position: relative;
   width: 65%;
   margin: 0.5rem;
-  background-color: #f6f6f6;
-  padding: 1.5rem 2rem;
-  border-radius: 1.5rem;
+  background-color: #fff;
+  border-radius: 1rem;
   box-shadow: 5px 5px 10px rgba(26, 26, 26, 0.3);
+  animation: scrollbar 0.8s;
+  animation-timing-function: cubic-bezier(0.5, 1.6, 0.3, 0.8);
 }
 
 /*# sourceMappingURL=main.css.map */
