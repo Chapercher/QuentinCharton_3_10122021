@@ -4,11 +4,12 @@
 	@include tablet-desktop {
 	  @include myFlex();
 	  justify-content: space-around;
-	@include myFlex(column);
+	  @include myFlex(column);
 	}
 	margin: 2rem;
   }
-  &__choice{
+
+  &__choice {
 	text-align: center;
 	position: relative;
 	width: 65%;
@@ -17,25 +18,29 @@
 	padding: 1.5rem 2rem;
 	border-radius: 1.5rem;
 	box-shadow: 5px 5px 10px $shadow;
-	&--number{
-	position: absolute;
-		text-align: center;
+
+	&--number {
+	  position: absolute;
+	  text-align: center;
 	  top: 20px;
 	  left: -10px;
-		padding: 4px;
+	  padding: 4px;
 	  width: 17px;
 	  border-radius: 50%;
 	  background-color: $color-primary;
 	  color: $white;
 	}
   }
-  &__title{
+
+  &__title {
 	margin-left: 1.5rem;
   }
 }
-li:hover{
+
+li:hover {
   background-color: $color-icon;
-  >i{
+
+  > i {
 	color: $color-primary;
   }
 }
@@ -43,9 +48,11 @@ li:hover{
 // partie restaurant
 .restaurant {
   @include bloc_restaurant;
-	>h2{
-	  text-align: center;
-	}
+
+  > h2 {
+	text-align: center;
+  }
+
   &__block {
 	@include desktop-only {
 	  display: grid;
@@ -58,27 +65,31 @@ li:hover{
 	  @include grid;
 	}
 	padding-bottom: 1px;
-	>a{
+
+	> a {
 	  margin: 20px;
 	  background-color: $white;
 	  border-radius: 15px;
 	}
   }
-  &__item{
+
+  &__item {
 	@include center;
 	height: 12rem;
 	object-fit: cover;
 	border-radius: 1rem 1rem 0 0;
 	width: 100%;
-	@include tablet-desktop{
+	@include tablet-desktop {
 	  width: 100%;
 	}
   }
-  &__card{
+
+  &__card {
 	position: relative;
   }
-// partie "nouveau" restaurant
-  &__novelty{
+
+  // partie "nouveau" restaurant
+  &__novelty {
 	position: absolute;
 	top: 1rem;
 	right: 1rem;
@@ -93,20 +104,28 @@ li:hover{
   width: 100%;
   position: center;
 }
-.menu-top{
+
+.menu-top {
   padding-top: 5%;
+
+  &__title {
+	font-family: 'Shrikhand', sans-serif;
+  }
 }
-.menu{
+
+.menu {
   transform: translateY(-80px);
   background-color: $white;
   border-radius: 50px;
   margin: auto;
-  &__title{
+
+  &__title {
 	position: relative;
 	text-transform: uppercase;
 	margin-bottom: 1px;
   }
-  &__title::after{
+
+  &__title::after {
 	content: '';
 	position: absolute;
 	bottom: 0;
@@ -115,5 +134,15 @@ li:hover{
 	height: 2px;
 	width: 30px;
 	background-color: $bg-novelty;
+  }
+  &__plat{
+	text-align: center;
+	position: relative;
+	width: 65%;
+	margin: .5rem;
+	background-color: $light-grey;
+	padding: 1.5rem 2rem;
+	border-radius: 1.5rem;
+	box-shadow: 5px 5px 10px $shadow;
   }
 }

@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Shrikhand&display=swap");
 *, *::before, *::after {
   box-sizing: inherit;
   margin: 0;
@@ -376,6 +377,9 @@ li:hover > i {
 .menu-top {
   padding-top: 5%;
 }
+.menu-top__title {
+  font-family: "Shrikhand", sans-serif;
+}
 
 .menu {
   transform: translateY(-80px);
@@ -397,6 +401,16 @@ li:hover > i {
   height: 2px;
   width: 30px;
   background-color: #99E2D0;
+}
+.menu__plat {
+  text-align: center;
+  position: relative;
+  width: 65%;
+  margin: 0.5rem;
+  background-color: #f6f6f6;
+  padding: 1.5rem 2rem;
+  border-radius: 1.5rem;
+  box-shadow: 5px 5px 10px rgba(26, 26, 26, 0.3);
 }
 
 /*# sourceMappingURL=main.css.map */
