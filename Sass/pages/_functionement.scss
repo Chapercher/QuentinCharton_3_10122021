@@ -1,0 +1,60 @@
+// partie fonctionnement
+.function {
+  &__card {
+	@include desktop-only {
+	  @include myFlex();
+	  padding: 0 2rem;
+	}
+	@include myFlex(column);
+  }
+
+  &__choice {
+	i{
+	  color: $grey-icon;
+	}
+	@include desktop-only {
+	  margin: 0 2rem;
+	}
+	text-align: center;
+	position: relative;
+	width: 65%;
+	margin: .5rem;
+	background-color: $light-grey;
+	padding: 1.5rem 2rem;
+	border-radius: 1.5rem;
+	box-shadow: 5px 5px 10px $shadow;
+
+	&--number {
+	  position: absolute;
+	  text-align: center;
+	  top: 20px;
+	  left: -10px;
+	  padding: 4px;
+	  width: 17px;
+	  border-radius: 50%;
+	  background-color: $color-primary;
+	  color: $white;
+	}
+
+	&--icon {
+	  margin-right: .5rem;
+	  color: $dark-grey;
+	}
+
+	> span {
+	  font-weight: bold;
+	}
+  }
+
+  &__title {
+	margin-left: 1.5rem;
+  }
+}
+
+li:hover {
+  background-color: $color-icon;
+
+  > i {
+	color: $color-primary;
+  }
+}

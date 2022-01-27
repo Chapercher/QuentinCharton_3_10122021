@@ -25,8 +25,8 @@
 
 // mixin : flex-direction
 @mixin myFlex ($flex-direction: row){
-  flex-direction: $flex-direction;
   display: flex;
+  flex-direction: $flex-direction;
   align-items: center;
 }
 
@@ -50,7 +50,10 @@
 }
 
 @mixin tablet-desktop {
-  @media screen and (min-width: $breakpoints-tablet-desktop){
-  @content;
-}
+  @media screen and (min-width: $breakpoints-tablet-desktop) {
+    @content;
+    //@include tablet-only{
+    //  règle de css
+    // }
+  }
 }
