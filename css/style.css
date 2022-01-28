@@ -21,61 +21,71 @@ a {
 
 h1 {
   display: block;
-  font-size: 2rem;
-  margin-block-start: 1rem;
-  margin-block-end: 1rem;
+  font-size: 32px;
+  margin-block-start: 16px;
+  margin-block-end: 16px;
   margin-inline-start: 0;
   margin-inline-end: 0;
 }
 @media screen and (min-width: 768px) {
   h1 {
-    font-size: 3rem;
+    font-size: 48px;
   }
 }
 
 h2 {
   display: block;
-  font-size: 1.5rem;
-  margin-block-start: 1rem;
-  margin-block-end: 1rem;
+  font-size: 24px;
+  margin-block-start: 16px;
+  margin-block-end: 16px;
   margin-inline-start: 0;
   margin-inline-end: 0;
 }
 @media screen and (min-width: 768px) {
   h2 {
-    margin-bottom: 2rem;
-    font-size: 2.5rem;
+    margin-bottom: 32px;
+    font-size: 40px;
   }
 }
 
+@media screen and (min-width: 1200px) {
+  h3 {
+    font-size: 30px;
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   h3 {
-    font-size: 2rem;
+    font-size: 32px;
   }
 }
 
+@media screen and (min-width: 1200px) {
+  h4 {
+    font-size: 32px;
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   h4 {
-    font-size: 1.5rem;
+    font-size: 24px;
   }
 }
 
 p {
   display: block;
-  font-size: 1rem;
-  margin-block-start: 1rem;
-  margin-block-end: 1rem;
+  font-size: 16px;
+  margin-block-start: 16px;
+  margin-block-end: 16px;
   margin-inline-start: 0;
   margin-inline-end: 0;
 }
 @media screen and (min-width: 1200px) {
   p {
-    font-size: 2rem;
+    font-size: 24px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   p {
-    font-size: 1.5rem;
+    font-size: 24px;
     font-weight: 400;
   }
 }
@@ -380,11 +390,11 @@ ol {
 }
 .restaurant__card--title {
   font-weight: bold;
-  font-size: 1rem;
+  font-size: 16px;
 }
 .restaurant__card--text {
   margin: 0 0 0.25rem;
-  font-size: 1rem;
+  font-size: 16px;
 }
 .restaurant__caption {
   display: flex;
@@ -447,16 +457,22 @@ ol {
 @media screen and (min-width: 768px) {
   .head-menupage__logo {
     width: 18rem;
-    height: 5rem;
+    height: 3rem;
   }
 }
 
 .menu-bg {
   width: 100%;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .menu-bg {
     height: 80vh;
+    object-fit: cover;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .menu-bg {
+    height: 40vh;
     object-fit: cover;
   }
 }
@@ -515,6 +531,7 @@ ol {
     grid-gap: 25px;
     column-gap: 40px;
     margin: 4rem;
+    grid-gap: 0;
   }
 }
 .menu__plat {
@@ -522,7 +539,6 @@ ol {
   display: flex;
   flex-direction: row;
   justify-content: start;
-  padding: 1rem;
   align-items: end;
   text-align: start;
   position: relative;
@@ -535,13 +551,14 @@ ol {
   animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 .menu__plat--price {
+  padding: 1rem;
   text-align: right;
   width: 30%;
   transition: all 0.4s ease-out;
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .menu__plat--price {
-    font-size: 1.5rem;
+    font-size: 24px;
     font-weight: 400;
   }
 }
@@ -561,6 +578,7 @@ ol {
   width: 20%;
 }
 .menu__left {
+  padding: 1rem;
   width: 70%;
   transition: all 0.4s ease-out;
 }

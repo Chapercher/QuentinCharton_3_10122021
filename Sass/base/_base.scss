@@ -20,50 +20,56 @@ a {
 
 h1 {
   @include tablet-desktop {
-	font-size: 3rem;
+	font-size: 48px;
   }
   display: block;
-  font-size: 2rem;
-  margin-block-start: 1rem;
-  margin-block-end: 1rem;
+  font-size: 32px;
+  margin-block-start: 16px;
+  margin-block-end: 16px;
   margin-inline-start: 0;
   margin-inline-end: 0;
 }
 
 h2 {
   @include tablet-desktop {
-    margin-bottom: 2rem;
-    font-size: 2.5rem;
+    margin-bottom: 32px;
+    font-size: 40px;
   }
   display: block;
-  font-size: 1.5rem;
-  margin-block-start: 1rem;
-  margin-block-end: 1rem;
+  font-size: 24px;
+  margin-block-start: 16px;
+  margin-block-end: 16px;
   margin-inline-start: 0;
   margin-inline-end: 0;
 }
 h3{
+  @include desktop-only{
+	font-size: 30px;
+  }
   @include tablet-only{
-	font-size: 2rem;
+	font-size: 32px;
   }
 }
 h4{
+  @include desktop-only{
+	font-size: 32px;
+  }
   @include tablet-only{
-	font-size: 1.5rem;
+	font-size: 24px;
   }
 }
   p {
 	@include desktop-only {
-	  font-size: 2rem;
+	  font-size: 24px;
 	}
 	@include tablet-only{
-	  font-size: 1.5rem;
+	  font-size: 24px;
 	  font-weight: 400;
 	}
 	display: block;
-	font-size: 1rem;
-	margin-block-start: 1rem;
-	margin-block-end: 1rem;
+	font-size: 16px;
+	margin-block-start: 16px;
+	margin-block-end: 16px;
 	margin-inline-start: 0;
 	margin-inline-end: 0;
   }
