@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700;900&family=Shrikhand&display=swap");
 *, *::before, *::after {
   box-sizing: inherit;
   margin: 0;
@@ -48,6 +48,18 @@ h2 {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  h3 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  h4 {
+    font-size: 1.5rem;
+  }
+}
+
 p {
   display: block;
   font-size: 1rem;
@@ -56,9 +68,15 @@ p {
   margin-inline-start: 0;
   margin-inline-end: 0;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   p {
     font-size: 2rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  p {
+    font-size: 1.5rem;
+    font-weight: 400;
   }
 }
 
@@ -382,8 +400,25 @@ ol {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  background-color: black;
   right: 15px;
+}
+.restaurant__heart i {
+  font-size: 24px;
+}
+.restaurant__heart i .fas {
+  color: transparent;
+  background-image: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
+  -webkit-background-clip: text;
+  position: absolute;
+  opacity: 0;
+  transition: all 0.5s;
+}
+.restaurant__heart i:hover .fas {
+  opacity: 1;
+  transform: scale(1.05);
+}
+.restaurant__heart i:hover .far {
+  opacity: 0;
 }
 .restaurant__heart:hover {
   background-color: linear-gradient(357deg, #9356dc 0%, #ff79da 90%);
@@ -406,14 +441,13 @@ ol {
   justify-content: space-between;
 }
 .head-menupage__logo {
-  width: 10px;
-  heigth: 10px;
+  width: 15rem;
   margin: auto;
 }
 @media screen and (min-width: 768px) {
   .head-menupage__logo {
-    width: 10px;
-    height: 10px;
+    width: 18rem;
+    height: 5rem;
   }
 }
 
@@ -455,7 +489,6 @@ ol {
   border-radius: 50px;
   margin: auto;
   padding: 0 1rem;
-  overflow: hidden;
 }
 .menu__title {
   position: relative;
@@ -471,6 +504,9 @@ ol {
   height: 2px;
   width: 30px;
   background-color: #99E2D0;
+}
+.menu__section {
+  margin: 2rem 0;
 }
 @media screen and (min-width: 1200px) {
   .menu__section {
@@ -503,6 +539,12 @@ ol {
   width: 30%;
   transition: all 0.4s ease-out;
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .menu__plat--price {
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+}
 .menu__plat--description {
   margin-block-end: 0;
 }
@@ -522,6 +564,11 @@ ol {
   width: 70%;
   transition: all 0.4s ease-out;
 }
+.menu__left h4, .menu__left p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 .menu__check {
   height: 100%;
   background-color: blue;
@@ -532,6 +579,10 @@ ol {
 .menu__check i {
   transform: rotate(360deg);
   transition: all 0.4s ease-out;
+}
+.menu button {
+  display: block;
+  margin: 0 auto;
 }
 
 .like {
@@ -546,6 +597,10 @@ ol {
 .empty {
   position: absolute;
   background-color: #fff;
+}
+
+.filled {
+  text-color: linear-gradient(357deg, #9356dc 0%, #ff79da 90%);
 }
 
 .function__card {

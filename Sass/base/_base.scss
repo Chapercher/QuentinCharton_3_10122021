@@ -42,10 +42,23 @@ h2 {
   margin-inline-start: 0;
   margin-inline-end: 0;
 }
-
+h3{
+  @include tablet-only{
+	font-size: 2rem;
+  }
+}
+h4{
+  @include tablet-only{
+	font-size: 1.5rem;
+  }
+}
   p {
-	@include tablet-desktop {
+	@include desktop-only {
 	  font-size: 2rem;
+	}
+	@include tablet-only{
+	  font-size: 1.5rem;
+	  font-weight: 400;
 	}
 	display: block;
 	font-size: 1rem;

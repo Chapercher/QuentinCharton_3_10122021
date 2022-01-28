@@ -1,9 +1,11 @@
 // partie restaurant
 .restaurant {
   @include bloc_restaurant;
+
   > h2 {
 	text-align: center;
   }
+
   &__block {
 	@include desktop-only {
 	  display: grid;
@@ -16,12 +18,14 @@
 	  @include grid;
 	}
 	padding-bottom: 1px;
+
 	> a {
 	  margin: 20px;
 	  background-color: $white;
 	  border-radius: 15px;
 	}
   }
+
   &__item {
 	@include center;
 	height: 12rem;
@@ -32,38 +36,64 @@
 	  width: 100%;
 	}
   }
+
   &__card {
 	position: relative;
-	&--title{
+
+	&--title {
 	  font-weight: bold;
 	  font-size: 1rem;
 	}
-	&--text{
+
+	&--text {
 	  margin: 0 0 .25rem;
 	  font-size: 1rem;
 	}
   }
-  &__caption{
+
+  &__caption {
 	@include myFlex();
 	justify-content: space-between;
 	margin: .5rem;
 	padding: .5rem .25rem;
   }
-  &__heart{
+
+  &__heart {
 	position: absolute;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	cursor: pointer;
-	background-color: black;
 	right: 15px;
+
+	i {
+	  font-size: 24px;
+	  .fas {
+		color: transparent;
+		background-image: linear-gradient(0deg,$color-primary 0%,$color-secondary 100%);
+		-webkit-background-clip: text;
+		position: absolute;
+		opacity: 0;
+		transition: all .5s;
+	  }
+	  &:hover .fas{
+		opacity: 1;
+		transform: scale(1.05);
+	  }
+	  &:hover .far{
+		opacity: 0;
+	  }
+	}
   }
-  &__heart:hover{
+
+  &__heart:hover {
 	background-color: $color-btn;
   }
-  &__heart:hover .empty{
+
+  &__heart:hover .empty {
 	opacity: 0;
   }
+
   // partie "nouveau" restaurant
   &__novelty {
 	font-weight: bold;
@@ -80,19 +110,20 @@
 // page menu
 
 // Head de la page menu
-.head-menupage{
+.head-menupage {
   display: flex;
   justify-content: space-between;
-  &__icon{
+
+  &__icon {
 
   }
-  &__logo{
-  @include tablet-desktop{
-	width: 10px;
-	height: 10px;
-  }
-  	width: 10px;
-	heigth: 10px;
+
+  &__logo {
+	@include tablet-desktop {
+	  width: 18rem;
+	  height: 5rem;
+	}
+	width: 15rem;
 	margin: auto;
   }
 }
@@ -110,16 +141,20 @@
   display: flex;
   justify-content: space-between;
   padding: 2rem;
+
   &__title {
 	font-family: 'Shrikhand', sans-serif;
 	letter-spacing: 2px;
   }
-  &__heart{
+
+  &__heart {
 	@include myFlex(column);
   }
-  &__heart:hover{
+
+  &__heart:hover {
 	background-color: $color-btn;
-	.empty{
+
+	.empty {
 	  opacity: 0;
 	}
   }
@@ -132,7 +167,7 @@
   border-radius: 50px;
   margin: auto;
   padding: 0 1rem;
-  overflow: hidden;
+
   &__title {
 	position: relative;
 	text-transform: uppercase;
@@ -149,12 +184,14 @@
 	width: 30px;
 	background-color: $bg-novelty;
   }
-	&__section{
-	  @include desktop-only {
-		@include grid;
-	  }
 
+  &__section {
+	@include desktop-only {
+	  @include grid;
 	}
+	margin: 2rem 0;
+  }
+
   &__plat {
 	overflow: hidden;
 	display: flex;
@@ -171,60 +208,86 @@
 	border-radius: 1rem;
 	animation: scrollbar 1s;
 	animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
-	&--price{
+
+	&--price {
 	  text-align: right;
 	  width: 30%;
 	  transition: all .4s ease-out;
+	  @include tablet-only{
+	  	font-size: 1.5rem;
+		font-weight: 400;
+	  }
 	}
-	&--description{
+
+	&--description {
 	  margin-block-end: 0;
 	}
-	  &:hover{
-		.menu{
-			&__check{
-			  width: 20%;
-			  & i{
-				transform: rotate(0);
-			  }
-			}
-		  &__left{
-			width: 60%;
-		  }
-		  &__plat--price{
-			width: 20%;
+
+	&:hover {
+	  .menu {
+		&__check {
+		  width: 20%;
+
+		  & i {
+			transform: rotate(0);
 		  }
 		}
-  	}
+
+		&__left {
+		  width: 60%;
+		}
+
+		&__plat--price {
+		  width: 20%;
+		}
+	  }
+	}
   }
-  &__left{
+
+  &__left {
 	width: 70%;
 	transition: all .4s ease-out;
+
+	h4, p {
+	  white-space: nowrap;
+	  overflow: hidden;
+	  text-overflow: ellipsis;
+	}
   }
-  &__check{
-	& i{
-	transform: rotate(360deg);
-	transition: all .4s ease-out;
-  }
+
+  &__check {
+	& i {
+	  transform: rotate(360deg);
+	  transition: all .4s ease-out;
+	}
+
 	height: 100%;
 	background-color: blue;
 	width: 0;
 	overflow: hidden;
 	transition: all .4s ease-out;
   }
+  // bouton page menu
+  button{
+	display: block;
+	margin: 0 auto;
+  }
 }
 
 
 // Like
-.like{
+.like {
   transition-duration: .25s;
   background-color: $white;
   @include center;
   mix-blend-mode: lighten;
 }
-.empty{
+
+.empty {
   position: absolute;
   background-color: $white;
 }
-.filled{
-  //position: absolute;
+
+.filled {
+  text-color: $color-btn;
 }
