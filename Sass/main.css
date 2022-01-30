@@ -319,6 +319,9 @@ ol {
   margin-right: 0.5rem;
   color: #f6f6f6;
 }
+.location__logo > i {
+  color: #333;
+}
 .location__txt {
   font-weight: 500;
 }
@@ -450,9 +453,16 @@ ol {
   display: flex;
   justify-content: space-between;
 }
+.head-menupage a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
 .head-menupage__logo {
   width: 15rem;
   margin: auto;
+  margin-right: 20%;
 }
 @media screen and (min-width: 768px) {
   .head-menupage__logo {
@@ -515,10 +525,10 @@ ol {
   content: "";
   position: absolute;
   bottom: 0;
-  left: 0;
+  left: 4px;
   transform: translateX(-3px);
-  height: 2px;
-  width: 30px;
+  height: 3px;
+  width: 35px;
   background-color: #99E2D0;
 }
 .menu__section {
@@ -589,7 +599,7 @@ ol {
 }
 .menu__check {
   height: 100%;
-  background-color: blue;
+  background-color: #99E2D0;
   width: 0;
   overflow: hidden;
   transition: all 0.4s ease-out;
@@ -597,6 +607,17 @@ ol {
 .menu__check i {
   transform: rotate(360deg);
   transition: all 0.4s ease-out;
+  padding: 1rem;
+  color: #99E2D0;
+}
+.menu__check--icon {
+  background-color: #fff;
+  border-radius: 100%;
+  height: 1.5rem;
+  width: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .menu button {
   display: block;
@@ -615,10 +636,6 @@ ol {
 .empty {
   position: absolute;
   background-color: #fff;
-}
-
-.filled {
-  text-color: linear-gradient(357deg, #9356dc 0%, #ff79da 90%);
 }
 
 .function__card {

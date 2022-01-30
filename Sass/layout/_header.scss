@@ -38,6 +38,9 @@
   &__logo{
 	margin-right: 0.5rem;
 	color: $light-grey;
+	> i {
+	  color: $dark-grey;
+	}
   }
   &__txt{
 	font-weight: 500;
