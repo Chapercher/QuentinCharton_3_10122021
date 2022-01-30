@@ -21,7 +21,7 @@ a {
 
 h1 {
   display: block;
-  font-size: 32px;
+  font-size: 24px;
   margin-block-start: 16px;
   margin-block-end: 16px;
   margin-inline-start: 0;
@@ -73,7 +73,6 @@ h2 {
 p {
   display: block;
   font-size: 16px;
-  margin-block-start: 16px;
   margin-block-end: 16px;
   margin-inline-start: 0;
   margin-inline-end: 0;
@@ -468,6 +467,7 @@ ol {
   .head-menupage__logo {
     width: 18rem;
     height: 3rem;
+    margin-right: 40%;
   }
 }
 
@@ -548,8 +548,8 @@ ol {
   overflow: hidden;
   display: flex;
   flex-direction: row;
-  justify-content: start;
-  align-items: end;
+  justify-content: center;
+  align-items: center;
   text-align: start;
   position: relative;
   width: calc(100% - 3rem);
@@ -598,7 +598,7 @@ ol {
   text-overflow: ellipsis;
 }
 .menu__check {
-  height: 100%;
+  align-self: stretch;
   background-color: #99E2D0;
   width: 0;
   overflow: hidden;

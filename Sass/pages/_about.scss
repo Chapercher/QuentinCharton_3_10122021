@@ -125,6 +125,7 @@
 	@include tablet-desktop {
 	  width: 18rem;
 	  height: 3rem;
+	  margin-right: 40%;
 	}
 	width: 15rem;
 	margin: auto;
@@ -205,8 +206,8 @@
 	overflow: hidden;
 	display: flex;
 	flex-direction: row;
-	justify-content: start;
-	align-items: end;
+	justify-content: center;
+	align-items: center;
 	text-align: start;
 	position: relative;
 	width: calc(100% - 3rem); // calc sert à faire des calculs
@@ -273,7 +274,7 @@
 	  color: $bg-novelty;
 	}
 
-	height: 100%;
+	align-self: stretch;
 	background-color: $bg-novelty;
 	width: 0;
 	overflow: hidden;
