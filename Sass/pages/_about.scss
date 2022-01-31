@@ -108,31 +108,24 @@
 }
 
 // page menu
-
-// Head de la page menu
-.head-menupage {
-  display: flex;
-  justify-content: space-between;
-
-  & a{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin: auto;
+.head-menupage{
+  @include center;
+  position: relative;
+  &__icon{
+	position: absolute;
+	left: 3rem;
+	top: 50%;
+	@include center;
+	transform: translateY(-50%);
+	font-size: 3rem;
   }
-
-  &__logo {
-	@include tablet-desktop {
-	  width: 18rem;
-	  height: 3rem;
-	  margin-right: 40%;
+  &__title{
+	@include tablet-desktop{
+	  font-size: 3rem;
 	}
-	width: 15rem;
-	margin: auto;
-	margin-right: 20%;
+	font-family: "Shrikhand", sans-serif;
   }
 }
-
 // Body des pages menu
 .menu-bg {
   width: 100%;
@@ -158,6 +151,9 @@
 
   &__heart {
 	@include myFlex(column);
+	@include tablet-desktop{
+		font-size: 3rem;
+	}
   }
 
   &__heart:hover {

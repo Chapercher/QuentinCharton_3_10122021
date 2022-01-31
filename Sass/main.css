@@ -73,7 +73,6 @@ h2 {
 p {
   display: block;
   font-size: 16px;
-  margin-block-end: 16px;
   margin-inline-start: 0;
   margin-inline-end: 0;
 }
@@ -311,8 +310,10 @@ ol {
   display: flex;
   align-items: center;
   justify-content: center;
+  box-shadow: 1px -5px 5px rgba(0, 0, 0, 0.2);
   margin-top: 0.5rem;
   background-color: #eaeaea;
+  padding: 1rem;
 }
 .location__logo {
   margin-right: 0.5rem;
@@ -450,24 +451,26 @@ ol {
 
 .head-menupage {
   display: flex;
-  justify-content: space-between;
-}
-.head-menupage a {
-  display: flex;
-  justify-content: center;
   align-items: center;
-  margin: auto;
+  justify-content: center;
+  position: relative;
 }
-.head-menupage__logo {
-  width: 15rem;
-  margin: auto;
-  margin-right: 20%;
+.head-menupage__icon {
+  position: absolute;
+  left: 3rem;
+  top: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-50%);
+  font-size: 3rem;
+}
+.head-menupage__title {
+  font-family: "Shrikhand", sans-serif;
 }
 @media screen and (min-width: 768px) {
-  .head-menupage__logo {
-    width: 18rem;
-    height: 3rem;
-    margin-right: 40%;
+  .head-menupage__title {
+    font-size: 3rem;
   }
 }
 
@@ -500,6 +503,11 @@ ol {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .menu-top__heart {
+    font-size: 3rem;
+  }
 }
 .menu-top__heart:hover {
   background-color: linear-gradient(357deg, #9356dc 0%, #ff79da 90%);
