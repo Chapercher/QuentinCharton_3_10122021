@@ -233,7 +233,7 @@
 	  .menu {
 		&__check {
 		  width: 20%;
-
+		  @include center;
 		  & i {
 			transform: rotate(0);
 		  }
@@ -264,6 +264,7 @@
 
   &__check {
 	& i {
+	  @include center;
 	  transform: rotate(360deg);
 	  transition: all .4s ease-out;
 	  padding: 1rem;
@@ -291,19 +292,3 @@
 }
 
 
-// Like
-.like {
-  transition-duration: .25s;
-  background-color: $white;
-  @include center;
-  mix-blend-mode: lighten;
-}
-
-.empty {
-  position: absolute;
-  background-color: $white;
-}
-
-.filled {
-
-}

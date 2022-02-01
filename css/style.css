@@ -272,6 +272,51 @@ ol {
     transform: translate(24px, 0);
   }
 }
+.restaurant__heart, .menu-top__heart {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 1.5rem;
+  height: 1.9rem;
+  width: 2.45rem;
+  right: 0.5rem;
+  cursor: pointer;
+  background-color: black;
+}
+
+.menu-top__heart {
+  bottom: 0.4rem;
+  right: 0.5rem;
+  width: 2.2rem;
+  height: 1.6rem;
+}
+
+.like {
+  transition-duration: 0.25s;
+  background-color: #f6f6f6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  mix-blend-mode: lighten;
+}
+
+.empty {
+  position: absolute;
+  background-color: #F6F6F6;
+}
+
+.filled {
+  position: absolute;
+}
+
+.restaurant__heart:hover, .menu-top__heart:hover {
+  background: linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
+}
+.restaurant__heart:hover .empty, .menu-top__heart:hover .empty {
+  opacity: 0;
+}
+
 .head-first__img {
   padding: 10px;
   display: block;
@@ -585,6 +630,9 @@ ol {
 }
 .menu__plat:hover .menu__check {
   width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .menu__plat:hover .menu__check i {
   transform: rotate(0);
@@ -613,6 +661,9 @@ ol {
   transition: all 0.4s ease-out;
 }
 .menu__check i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   transform: rotate(360deg);
   transition: all 0.4s ease-out;
   padding: 1rem;
@@ -630,20 +681,6 @@ ol {
 .menu button {
   display: block;
   margin: 0 auto;
-}
-
-.like {
-  transition-duration: 0.25s;
-  background-color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  mix-blend-mode: lighten;
-}
-
-.empty {
-  position: absolute;
-  background-color: #fff;
 }
 
 .function__card {
