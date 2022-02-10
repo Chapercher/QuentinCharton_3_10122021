@@ -152,7 +152,7 @@
   &__heart {
 	@include myFlex(column);
 	@include tablet-desktop{
-		font-size: 3rem;
+		font-size: 51px;
 	}
   }
 
@@ -259,6 +259,12 @@
 	  white-space: nowrap;
 	  overflow: hidden;
 	  text-overflow: ellipsis;
+	  max-width: 285px;
+	}
+	@include tablet-desktop{
+	  h4, p{
+		max-width: none;
+	  }
 	}
   }
 

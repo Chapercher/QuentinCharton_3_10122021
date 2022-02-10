@@ -1,33 +1,30 @@
-.restaurant__heart, .menu-top__heart{
-  position: absolute;
+.restaurant__heart{
   display: flex;
   align-items: center;
   justify-content: center;
-  bottom: 1.5rem;
-  height: 1.9rem;
-  width: 2.45rem;
-  right: 0.5rem;
   cursor: pointer;
   background-color: black;
 }
 .menu-top__heart{
-  bottom: 0.4rem;
-  right: 0.5rem;
-  width: 2.2rem;
-  height: 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 48px;
+  width: 51px;
+  cursor: pointer;
+  background-color: black;
 }
 .like{
   transition-duration: .25s;
-  background-color: #f6f6f6;
+  background-color: $white;
   display: flex;
   align-items: center;
   justify-content: center;
   mix-blend-mode: lighten;  //Permet de mettre de la transparence au like
 }
 .empty{
-  position: absolute;
-  background-color: #F6F6F6;}
-
+  background-color: $white;
+}
 
 .filled{
   position: absolute;
