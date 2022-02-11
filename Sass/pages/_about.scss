@@ -112,12 +112,15 @@
   @include center;
   position: relative;
   &__icon{
+	@include tablet-desktop{
+	font-size: 3rem;
+	}
 	position: absolute;
 	left: 3rem;
 	top: 50%;
 	@include center;
 	transform: translateY(-50%);
-	font-size: 3rem;
+	font-size: 1.5rem;
   }
   &__title{
 	@include tablet-desktop{
@@ -146,7 +149,6 @@
 
   &__title {
 	font-family: 'Shrikhand', sans-serif;
-	letter-spacing: 2px;
   }
 
   &__heart {
@@ -241,6 +243,17 @@
 
 		&__left {
 		  width: 60%;
+		  h4, p {
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			max-width: 145px;
+		  }
+		  @include desktop-only{
+			h4, p{
+			  max-width: none;
+			}
+		  }
 		}
 
 		&__plat--price {
@@ -254,14 +267,12 @@
 	padding: 1rem;
 	width: 70%;
 	transition: all .4s ease-out;
-
 	h4, p {
 	  white-space: nowrap;
 	  overflow: hidden;
 	  text-overflow: ellipsis;
-	  max-width: 285px;
 	}
-	@include tablet-desktop{
+	@include desktop-only{
 	  h4, p{
 		max-width: none;
 	  }

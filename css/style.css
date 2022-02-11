@@ -280,14 +280,24 @@ ol {
   background-color: black;
 }
 
+.heart {
+  padding: 20px 0;
+}
+
 .menu-top__heart {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 48px;
-  width: 51px;
   cursor: pointer;
   background-color: black;
+  height: 16px;
+  width: 16px;
+}
+@media screen and (min-width: 768px) {
+  .menu-top__heart {
+    height: 48px;
+    width: 51px;
+  }
 }
 
 .like {
@@ -505,7 +515,12 @@ ol {
   align-items: center;
   justify-content: center;
   transform: translateY(-50%);
-  font-size: 3rem;
+  font-size: 1.5rem;
+}
+@media screen and (min-width: 768px) {
+  .head-menupage__icon {
+    font-size: 3rem;
+  }
 }
 .head-menupage__title {
   font-family: "Shrikhand", sans-serif;
@@ -539,7 +554,6 @@ ol {
 }
 .menu-top__title {
   font-family: "Shrikhand", sans-serif;
-  letter-spacing: 2px;
 }
 .menu-top__heart {
   display: flex;
@@ -637,6 +651,17 @@ ol {
 .menu__plat:hover .menu__left {
   width: 60%;
 }
+.menu__plat:hover .menu__left h4, .menu__plat:hover .menu__left p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 145px;
+}
+@media screen and (min-width: 1200px) {
+  .menu__plat:hover .menu__left h4, .menu__plat:hover .menu__left p {
+    max-width: none;
+  }
+}
 .menu__plat:hover .menu__plat--price {
   width: 20%;
 }
@@ -649,9 +674,8 @@ ol {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  max-width: 285px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .menu__left h4, .menu__left p {
     max-width: none;
   }

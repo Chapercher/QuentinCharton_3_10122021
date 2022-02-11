@@ -5,14 +5,19 @@
   cursor: pointer;
   background-color: black;
 }
+.heart{
+  padding: 20px 0;
+}
 .menu-top__heart{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 48px;
-  width: 51px;
+  @include tablet-desktop{
+    height: 48px;
+    width: 51px;
+  }
+  @include center;
   cursor: pointer;
   background-color: black;
+  height: 16px;
+  width: 16px;
 }
 .like{
   transition-duration: .25s;
