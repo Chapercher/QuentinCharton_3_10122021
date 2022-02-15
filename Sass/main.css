@@ -486,7 +486,7 @@ ol {
   opacity: 0;
 }
 .restaurant__heart:hover {
-  background-color: linear-gradient(357deg, #9356dc 0%, #ff79da 90%);
+  background: linear-gradient(357deg, #9356dc 0%, #ff79da 90%);
 }
 .restaurant__heart:hover .empty {
   opacity: 0;
@@ -566,7 +566,7 @@ ol {
   }
 }
 .menu-top__heart:hover {
-  background-color: linear-gradient(357deg, #9356dc 0%, #ff79da 90%);
+  background: linear-gradient(357deg, #9356dc 0%, #ff79da 90%);
 }
 .menu-top__heart:hover .empty {
   opacity: 0;

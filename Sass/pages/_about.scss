@@ -87,7 +87,7 @@
   }
 
   &__heart:hover {
-	background-color: $color-btn;
+	background: $color-btn;
   }
 
   &__heart:hover .empty {
@@ -159,7 +159,7 @@
   }
 
   &__heart:hover {
-	background-color: $color-btn;
+	background: $color-btn;
 
 	.empty {
 	  opacity: 0;
@@ -211,7 +211,7 @@
 	width: calc(100% - 3rem); // calc sert à faire des calculs
 	margin: 10px auto;
 	box-shadow: 5px 5px 10px rgb(26 26 26 / 30%);
-	background-color: #fff;
+	background-color: $white;
 	border-radius: 1rem;
 	animation: scrollbar 1s;
 	animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
