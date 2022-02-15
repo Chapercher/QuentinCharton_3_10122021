@@ -108,8 +108,9 @@ ol {
 @media screen and (min-width: 1200px) {
   .btn {
     border-radius: 2.5rem;
-    padding: 2rem 10rem;
+    padding: 1rem 6rem;
     cursor: pointer;
+    font-size: 25px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {

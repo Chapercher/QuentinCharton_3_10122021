@@ -7,8 +7,9 @@
   box-shadow: 5px 5px 10px $shadow;
   @include desktop-only{
     border-radius: 2.5rem;
-    padding: 2rem 10rem;
+    padding: 1rem 6rem;
     cursor: pointer;
+    font-size: 25px;
   }
   @include tablet-only{
     border-radius: 2rem;
