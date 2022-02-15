@@ -5,6 +5,7 @@
   font-size: 15px;
   font-weight: 500;
   box-shadow: 5px 5px 10px $shadow;
+  transition: box-shadow .3s;
   @include desktop-only{
     border-radius: 2.5rem;
     padding: 1rem 6rem;
@@ -21,5 +22,11 @@
     @include desktop-only{
     cursor: pointer;
     }
+    &:hover{
+      filter: brightness(1.75);
+    }
+  }
+  &:hover{
+    box-shadow: 5px 5px 5px rgba(0,0,0,.2);
   }
 }

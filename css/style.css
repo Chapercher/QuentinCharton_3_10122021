@@ -104,6 +104,7 @@ ol {
   font-size: 15px;
   font-weight: 500;
   box-shadow: 5px 5px 10px rgba(26, 26, 26, 0.3);
+  transition: box-shadow 0.3s;
 }
 @media screen and (min-width: 1200px) {
   .btn {
@@ -127,6 +128,12 @@ ol {
   .btn--purple {
     cursor: pointer;
   }
+}
+.btn--purple:hover {
+  filter: brightness(1.75);
+}
+.btn:hover {
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
 
 @keyframes scrollbar {
