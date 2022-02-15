@@ -130,6 +130,9 @@
   }
 }
 // Body des pages menu
+.menu-container{
+  margin-bottom: 60px;
+}
 .menu-bg {
   width: 100%;
   @include desktop-only {
