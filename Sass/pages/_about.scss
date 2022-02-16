@@ -246,10 +246,10 @@
 		&__left {
 		  width: 60%;
 		  @include desktop-only{
-			width: 83%;
+			width: 85%;
 		  }
 		  @include tablet-only{
-			width: 75%;
+			width: 79%;
 		  }
 		  h4, p {
 			white-space: nowrap;
