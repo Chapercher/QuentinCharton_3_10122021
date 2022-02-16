@@ -310,6 +310,11 @@ ol {
 .menu-top__heart i {
   font-size: 24px;
 }
+@media screen and (min-width: 768px) {
+  .menu-top__heart i {
+    font-size: 51px;
+  }
+}
 
 .like {
   transition-duration: 0.25s;
@@ -665,6 +670,16 @@ ol {
 }
 .menu__plat:hover .menu__left {
   width: 60%;
+}
+@media screen and (min-width: 1200px) {
+  .menu__plat:hover .menu__left {
+    width: 83%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .menu__plat:hover .menu__left {
+    width: 75%;
+  }
 }
 .menu__plat:hover .menu__left h4, .menu__plat:hover .menu__left p {
   white-space: nowrap;

@@ -245,6 +245,12 @@
 		}
 		&__left {
 		  width: 60%;
+		  @include desktop-only{
+			width: 83%;
+		  }
+		  @include tablet-only{
+			width: 75%;
+		  }
 		  h4, p {
 			white-space: nowrap;
 			overflow: hidden;
@@ -255,6 +261,7 @@
 			h4, p{
 			  max-width: none;
 			}
+
 		  }
 		}
 

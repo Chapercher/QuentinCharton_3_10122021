@@ -20,6 +20,9 @@
   width: 24px;
   i {
     font-size: 24px;
+    @include tablet-desktop{
+      font-size: 51px;
+    }
   }
 }
 .like{
