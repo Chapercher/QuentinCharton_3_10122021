@@ -16,8 +16,11 @@
   @include center;
   cursor: pointer;
   background-color: black;
-  height: 16px;
-  width: 16px;
+  height: 24px;
+  width: 24px;
+  i {
+    font-size: 24px;
+  }
 }
 .like{
   transition-duration: .25s;
